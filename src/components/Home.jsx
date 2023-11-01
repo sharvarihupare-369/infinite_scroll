@@ -10,7 +10,7 @@ const Home = () => {
     const [loading,setLoading] = useState(false)
 
     const fetchData = async() => {
-      let res = await axios.get(`https://jsonplaceholder.typicode.com/posts?_limit=9&_page=${page}`)
+      let res = await axios.get(`https://jsonplaceholder.typicode.com/photos?_limit=9&_page=${page}`)
     //   console.log(res.data)
       setData((prev)=>[...prev,...res.data])
       setLoading(false)
